@@ -1,0 +1,55 @@
+/* css reset user agent's default styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: var(--secondary-color);
+}
+
+img {
+  max-inline-size: 100%;
+  height: auto;
+}
+
+/* wrapper container */
+.wrapper {
+  padding: 0 2em;
+}
+
+/* css variables */
+:root {
+  --primary-color: #0571f8;
+  --secondary-color: #0e2431;
+  --xl-font: 2.5rem;
+  --hero-space: 0.005em;
+  --md-font: 1.4rem;
+}
+
+/* header section */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  font-size: var(--xl-font);
+}
+.light-font {
+  font-weight: 300;
+}
+.hero-description__title {
+  font-size: var(--xl-font);
+  letter-spacing: var(--hero-space);
+}
+.hero-description__subtitle {
+  font-size: var(--md-font);
+}
