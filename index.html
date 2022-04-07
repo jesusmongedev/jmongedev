@@ -7,10 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/styles.css" />
+    <script
+      defer
+      src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"
+    ></script>
   </head>
   <body>
     <div class="wrapper">
@@ -21,25 +25,35 @@
           </h1>
           <image src="assets/icons/menu-icon.svg" alt="mobile menu icon " />
         </div>
-        <div class="hero">
-          <img
-            src="assets/images/jesus-profile.png"
-            alt="Jesus Monge"
-            class="hero__img"
-          />
+      </header>
+      <main>
+        <section class="hero">
           <div class="hero-description">
             <h2 class="hero-description__title">
               <span class="light-font">Hi !</span> <br />
-              I’m Jesus Monge. <br />
-              a Frontend Developer
+              I’m <span class="primary-color">Jesus Monge</span> <br />
+              Frontend Developer
             </h2>
             <p class="hero-description__subtitle">
-              Frontend developer based in Portoviejo, Ecuador. I’am coding with
-              a clean and beautiful problem solving in mind.
+              Based in Portoviejo, Ecuador. I’m coding with a clean and
+              beautiful problem solving in mind.
             </p>
           </div>
-        </div>
-      </header>
+          <div class="hero-social">
+            <box-icon type="logo" name="linkedin"></box-icon>
+            <box-icon type="logo" name="twitter"></box-icon>
+            <box-icon type="logo" name="github"></box-icon>
+            <a href="#" class="primary-button primary-button--position"
+              >Hire me</a
+            >
+            <img
+              src="assets/images/jesus-profile.png"
+              alt="Jesus Monge"
+              class="hero__img"
+            />
+          </div>
+        </section>
+      </main>
     </div>
   </body>
 </html>
