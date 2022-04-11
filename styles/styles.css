@@ -108,6 +108,42 @@ li {
   box-shadow: -4px 4px 0 var(--secondary-color);
 }
 
+/* wave animation */
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 /* header section */
 .header {
   width: 100%;
@@ -207,15 +243,14 @@ li {
   text-align: center;
 }
 .project-image {
-  padding: 0.5rem;
-  margin-block-end: 3.2rem;
-  border: 2px solid #e3e3e3;
+  height: 25rem;
+  /* padding: 0 0.75rem; */
+  margin-block-end: var(--mb-2);
+  border: 3px solid var(--secondary-color);
   border-radius: var(--bd-radius);
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color); */
+  overflow-y: auto;
 }
-/* .project-image img {
-  width: 80%;
-} */
 
 .project-description {
   display: flex;
@@ -223,7 +258,8 @@ li {
   gap: var(--mb-2);
   text-align: left;
 }
-.project-description .project-title {
+.project-title {
+  margin-bottom: var(--mb-2);
   padding: 4px 8px;
   /* Para que el elemento no se expanda como consecuencia del display flex */
   font: bold var(--md-font) / 30px 'Poppins', sans-serif;
