@@ -46,23 +46,12 @@
   background-color: #fff;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
-
 .header__logo {
   font-size: 2rem;
 }
-
-.light-font {
+.header__logo--light {
   font-weight: 300;
 }
-
-.primary-color {
-  color: #0571f8;
-}
-
-.primary-color--bold {
-  font-weight: 600;
-}
-
 .header .nav {
   position: relative;
   display: flex;

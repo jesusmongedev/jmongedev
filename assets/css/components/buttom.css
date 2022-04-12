@@ -5,21 +5,13 @@
   border-radius: 0.8rem;
   font-size: 1.4rem;
 }
-
 .primary-button:hover {
   box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
 }
-
 .primary-button--hero {
   display: inline-block;
-  align-self: flex-start;
   font-size: 1.8rem;
 }
-
-.primary-button--position {
-  margin-top: 2.4rem;
-}
-
 .primary-button--flex {
   display: flex;
   align-items: center;

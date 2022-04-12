@@ -5,21 +5,17 @@
   background-color: $primary-color;
   border-radius: $bd-radius;
   font-size: $sm-font;
-}
-.primary-button:hover {
-  box-shadow: $button-shadow;
-}
-.primary-button--hero {
-  display: inline-block;
-  align-self: flex-start;
-  font-size: $md-font;
-}
-.primary-button--position {
-  margin-top: $mb-3;
-}
-.primary-button--flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: $mb-1;
+  &:hover {
+    box-shadow: $button-shadow;
+  }
+  &--hero {
+    display: inline-block;
+    font-size: $md-font;
+  }
+  &--flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $mb-1;
+  }
 }

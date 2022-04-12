@@ -3,28 +3,36 @@
 .hero {
   height: calc(100vh - $header-height);
   row-gap: 1.6rem;
+  &-description {
+    margin-top: $mb-3;
+    align-self: center;
+    &__title {
+      margin-bottom: $mb-2;
+      font-size: $xl-font;
+      letter-spacing: $hero-space;
+    }
+    &__subtitle {
+      font-size: $md-font;
+      margin-bottom: $mb-2;
+    }
+  }
+  &__img {
+    max-inline-size: 80%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  &-social {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+  }
 }
-.hero-description {
-  margin-top: $mb-3;
-  align-self: center;
-}
-.hero-description__title {
-  margin-bottom: $mb-2;
-  font-size: $xl-font;
-  letter-spacing: $hero-space;
-}
-.hero-description__subtitle {
-  font-size: $md-font;
-}
-.hero-social {
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  gap: 4em;
-}
-.hero__img {
-  max-inline-size: 80%;
-  position: absolute;
-  right: 0;
-  bottom: 0;
+
+.text-primary {
+  color: $primary-color;
+  &--bold {
+    font-weight: $text-bold;
+  }
 }

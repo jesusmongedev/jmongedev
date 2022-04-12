@@ -11,7 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/breakpoints/tablet.css" media="screen and (min-width: 768px)" />
+    <link rel="stylesheet" href="assets/css/largeMobiles.css" media="screen and (min-width: 475px)" />
+    <link rel="stylesheet" href="assets/css/tablet.css" media="screen and (min-width: 768px)" />
     <script
       defer
       src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"
@@ -23,7 +24,7 @@
       <nav class="nav bd-grid">
         <div>
           <h1 class="header__logo">
-            Jmonge<span class="light-font">Dev</span>
+            Jmonge<span class="header__logo--light">Dev</span>
           </h1>
         </div>
         <!-- ===== NAVIGATION ===== -->
@@ -60,12 +61,12 @@
       <section class="hero bd-grid">
         <div class="hero-description">
           <h2 class="hero-description__title">
-            <span class="light-font">Hey ! <span class="wave">👋</span></span>
+            <span>Hey ! <span class="wave">👋</span></span>
             <br />
-            I’m <span class="primary-color">Jesus Monge</span>
+            I’m <span class="text-primary">Jesus Monge</span>
           </h2>
           <p class="hero-description__subtitle">
-            <span class="primary-color primary-color--bold"
+            <span class="text-primary text-primary--bold"
               >Frontend developer</span
             >
             from Ecuador. I design and build beatiful and functional user
@@ -73,7 +74,7 @@
           </p>
           <a
             href="#"
-            class="primary-button primary-button--hero primary-button--position"
+            class="primary-button primary-button--hero"
             >Hire me</a
           >
         </div>
@@ -120,27 +121,28 @@
       <section class="work section" id="work">
         <h2 class="section-title">Projects</h2>
 
-        <div class="project bd-grid">
-          <div>
+        <div class="project-container bd-grid">
+          <figure class="project-card">
             <a
-              class="project-title"
+              class="project-card__title"
               target="_blank"
               href="https://jesusmongedev.github.io/Portafolio-Responsivo-Jesus/"
               >Platzi Avo eCommerce</a
             >
-            <div class="project-image">
+            <div class="project-picture">
               <img
                 src="./assets/images/platzi-avo-app.vercel.app.png"
                 alt="Platzi Avo App"
               />
             </div>
             <div class="project-description">
-              <p class="project-content">
+              <p class="project-description__text">
                 Next.js 🔹 React
                 <br />
                 Taking advantage of Next.js API, you can check information and
                 discover your favorite avocado, and its details.
               </p>
+            </div>
               <div class="project-links">
                 <a
                   target="_blank"
@@ -161,29 +163,29 @@
                   View source</a
                 >
               </div>
-            </div>
-          </div>
+          </figure>
 
-          <div >
+          <figure class="project-card" >
           <a
-            class="project-title"
+            class="project-card__title"
             target="_blank"
             href="https://jesusmongedev.github.io/Portafolio-Responsivo-Jesus/"
             >ToDo App</a
           >
-          <div class="project-image">
+          <div class="project-picture">
             <img
               src="./assets/images/todo-app-motivation-quote.netlify.app.png"
               alt="Platzi Avo App"
             />
           </div>
           <div class="project-description">
-            <p class="project-content">
+            <p class="project-description__text">
               React 🔹API
               <br />
               The ability to add, delete and update a todo, indicate completion. At the top an inspirational
               quote.
             </p>
+          </div>
             <div class="project-links">
               <a
                 target="_blank"
@@ -204,29 +206,29 @@
                 View source</a
               >
             </div>
-          </div>
-          </div>
+        </figure>
 
-          <div >
+          <figure class="project-card" >
             <a
-              class="project-title"
+              class="project-card__title"
               target="_blank"
               href="https://jesusmongedev.github.io/Portafolio-Responsivo-Jesus/"
               >EuroBuilding
             </a>
-            <div class="project-image">
+            <div class="project-picture">
               <img
                 src="./assets/images/eurobuilding-hotel.vercel.app.png"
                 alt="Platzi Avo App"
               />
             </div>
             <div class="project-description">
-              <p class="project-content">
+              <p class="project-description__text">
                 Next.js 🔹API
                 <br />
                 Hotel booking reservation app: Reviews, About, Slider, Rooms,
                 section. Mobile only design.
               </p>
+            </div>
               <div class="project-links">
                 <a
                   target="_blank"
@@ -246,9 +248,8 @@
                   <span> <box-icon name="folder" color="#fff"></box-icon> </span>
                   View source</a
                 >
-              </div>
             </div>
-          </div>
+          </figure>
         </div>
 
       </section>
