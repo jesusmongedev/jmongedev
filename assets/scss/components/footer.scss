@@ -1,0 +1,23 @@
+@use '../abstracts/index' as *;
+
+.footer {
+  text-align: center;
+  padding: 2rem 0 3rem 0;
+  font-weight: $text-bold;
+  font-size: $sm-font;
+  background-color: $secondary-color;
+  color: #fff;
+}
+
+.footer__social {
+  margin-top: $mb-4;
+  margin-bottom: $mb-4;
+}
+
+.footer__social-icon {
+  margin: 0 $mb-3;
+}
+
+p.footer-description {
+  margin-bottom: 0.25rem;
+}

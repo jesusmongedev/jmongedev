@@ -1,0 +1,31 @@
+.hero {
+  height: 100vh;
+}
+
+.bd-grid {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-description {
+  max-width: 50rem;
+  align-self: flex-end;
+}
+
+.hero__img {
+  max-inline-size: 100%;
+  right: 10%;
+  bottom: 15%;
+}
+
+.hero-social {
+  flex-direction: row;
+}
+
+.project {
+  margin-block: 8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/*# sourceMappingURL=tablet.css.map */

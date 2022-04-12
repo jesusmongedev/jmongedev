@@ -1,0 +1,26 @@
+@use '../abstracts/index' as *;
+
+.section {
+  padding-top: 4.8rem;
+  /* padding-bottom: 3.2rem; */
+}
+
+.section-title {
+  position: relative;
+  font-size: $logo-font;
+  color: $primary-color;
+  margin-top: $mb-4;
+  margin-bottom: $mb-4;
+  text-align: center;
+}
+.section-title::after {
+  position: absolute;
+  content: '';
+  width: 64px;
+  height: 0.288rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 3.2rem;
+  background-color: $primary-color;
+}

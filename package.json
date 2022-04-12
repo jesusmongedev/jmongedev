@@ -1,0 +1,19 @@
+{
+  "name": "jmongedev-website",
+  "version": "1.0.0",
+  "description": "JMongeDev personal website",
+  "main": "index.html",
+  "scripts": {
+    "sass-dev": "sass --watch --update --style=expanded assets/scss:assets/css",
+    "sass-prod": "sass --no-source-map --style=compressed assets/scss:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesusmongedev/jmongedev.git"
+  },
+  "author": "jmongedev",
+  "homepage": "http://jesusmongedev.github.io/jmongedev",
+  "devDependencies": {
+    "sass": "^1.50.0"
+  }
+}

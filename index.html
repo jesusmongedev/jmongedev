@@ -10,7 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/breakpoints/tablet.css" media="screen and (min-width: 768px)" />
     <script
       defer
       src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"
@@ -120,49 +121,50 @@
         <h2 class="section-title">Projects</h2>
 
         <div class="project bd-grid">
-          <a
-            class="project-title"
-            target="_blank"
-            href="https://jesusmongedev.github.io/Portafolio-Responsivo-Jesus/"
-            >Platzi Avo eCommerce</a
-          >
-          <div class="project-image">
-            <img
-              src="./assets/images/platzi-avo-app.vercel.app.png"
-              alt="Platzi Avo App"
-            />
-          </div>
-          <div class="project-description">
-            <p class="project-content">
-              Next.js 🔹 React
-              <br />
-              Taking advantage of Next.js API, you can check information and
-              discover your favorite avocado, and its details.
-            </p>
-            <div class="project-links">
-              <a
-                target="_blank"
-                rel="noopener nofollow"
-                href="https://platzi-avo-app.vercel.app/"
-                class="primary-button primary-button--flex"
-              >
-                <span> <box-icon name="link" color="#fff"></box-icon> </span>
-                Try it live</a
-              >
-              <a
-                target="_blank"
-                rel="noopener nofollow"
-                href="https://github.com/jesusmongedev/platzi-avo-app"
-                class="primary-button primary-button--flex"
-              >
-                <span> <box-icon name="folder" color="#fff"></box-icon> </span>
-                View source</a
-              >
+          <div>
+            <a
+              class="project-title"
+              target="_blank"
+              href="https://jesusmongedev.github.io/Portafolio-Responsivo-Jesus/"
+              >Platzi Avo eCommerce</a
+            >
+            <div class="project-image">
+              <img
+                src="./assets/images/platzi-avo-app.vercel.app.png"
+                alt="Platzi Avo App"
+              />
+            </div>
+            <div class="project-description">
+              <p class="project-content">
+                Next.js 🔹 React
+                <br />
+                Taking advantage of Next.js API, you can check information and
+                discover your favorite avocado, and its details.
+              </p>
+              <div class="project-links">
+                <a
+                  target="_blank"
+                  rel="noopener nofollow"
+                  href="https://platzi-avo-app.vercel.app/"
+                  class="primary-button primary-button--flex"
+                >
+                  <span> <box-icon name="link" color="#fff"></box-icon> </span>
+                  Try it live</a
+                >
+                <a
+                  target="_blank"
+                  rel="noopener nofollow"
+                  href="https://github.com/jesusmongedev/platzi-avo-app"
+                  class="primary-button primary-button--flex"
+                >
+                  <span> <box-icon name="folder" color="#fff"></box-icon> </span>
+                  View source</a
+                >
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="project bd-grid">
+          <div >
           <a
             class="project-title"
             target="_blank"
@@ -179,8 +181,7 @@
             <p class="project-content">
               React 🔹API
               <br />
-              The ability to add, delete and update a todo 🔺Button on each TODO
-              to indicate completion 🔺 At the top of the page an inspirational
+              The ability to add, delete and update a todo, indicate completion. At the top an inspirational
               quote.
             </p>
             <div class="project-links">
@@ -204,51 +205,71 @@
               >
             </div>
           </div>
-        </div>
-
-        <div class="project bd-grid">
-          <a
-            class="project-title"
-            target="_blank"
-            href="https://jesusmongedev.github.io/Portafolio-Responsivo-Jesus/"
-            >EuroBuilding
-          </a>
-          <div class="project-image">
-            <img
-              src="./assets/images/eurobuilding-hotel.vercel.app.png"
-              alt="Platzi Avo App"
-            />
           </div>
-          <div class="project-description">
-            <p class="project-content">
-              Next.js 🔹API
-              <br />
-              Hotel booking reservation app 🔺Reviews, About, Slider, Rooms,
-              section.
-            </p>
-            <div class="project-links">
-              <a
-                target="_blank"
-                rel="noopener nofollow"
-                href="https://eurobuilding-hotel.vercel.app/  "
-                class="primary-button primary-button--flex"
-              >
-                <span> <box-icon name="link" color="#fff"></box-icon> </span>
-                Try it live</a
-              >
-              <a
-                target="_blank"
-                rel="noopener nofollow"
-                href="https://github.com/jesusmongedev/eurobuilding-hotel"
-                class="primary-button primary-button--flex"
-              >
-                <span> <box-icon name="folder" color="#fff"></box-icon> </span>
-                View source</a
-              >
+
+          <div >
+            <a
+              class="project-title"
+              target="_blank"
+              href="https://jesusmongedev.github.io/Portafolio-Responsivo-Jesus/"
+              >EuroBuilding
+            </a>
+            <div class="project-image">
+              <img
+                src="./assets/images/eurobuilding-hotel.vercel.app.png"
+                alt="Platzi Avo App"
+              />
+            </div>
+            <div class="project-description">
+              <p class="project-content">
+                Next.js 🔹API
+                <br />
+                Hotel booking reservation app: Reviews, About, Slider, Rooms,
+                section. Mobile only design.
+              </p>
+              <div class="project-links">
+                <a
+                  target="_blank"
+                  rel="noopener nofollow"
+                  href="https://eurobuilding-hotel.vercel.app/  "
+                  class="primary-button primary-button--flex"
+                >
+                  <span> <box-icon name="link" color="#fff"></box-icon> </span>
+                  Try it live</a
+                >
+                <a
+                  target="_blank"
+                  rel="noopener nofollow"
+                  href="https://github.com/jesusmongedev/eurobuilding-hotel"
+                  class="primary-button primary-button--flex"
+                >
+                  <span> <box-icon name="folder" color="#fff"></box-icon> </span>
+                  View source</a
+                >
+              </div>
             </div>
           </div>
         </div>
+
       </section>
     </main>
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+          <p class="header__logo">
+            Jmonge<span class="light-font">Dev</span> 
+          </p>
+
+          <div class="footer__social">
+            <a href="https://www.linkedin.com/in/jesus-monge-loor/?locale=en_US" class="footer__social-icon" target="_blank"
+              ><box-icon  color="white" type="logo" name="linkedin"></box-icon></a>
+            <a href="https://twitter.com/jmongedev"  target="_blank"
+              ><box-icon  color="white" type="logo" name="twitter"></box-icon></a>
+            <a href="https://github.com/jesusmongedev"  target="_blank" class="footer__social-icon"
+              ><box-icon  color="white" type="logo" name="github"></box-icon></a>
+          </div>
+          <p class="footer-description">Made with 🧡 by Jesús 🇪🇨. </p>
+          <span> &#169 2022 Copyright all right reserved.</span>
+        </div>
+      </footer>
   </body>
 </html>

@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../scss/components/reusableSection.scss","../../scss/abstracts/fonts.scss","../../scss/abstracts/colors.scss","../../scss/abstracts/others.scss"],"names":[],"mappings":"AAEA;EACE;AACA;;;AAGF;EACE;EACA,WCRU;EDSV,OEVc;EFWd,YGJK;EHKL,eGLK;EHML;;;AAEF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA,kBExBc","file":"reusableSection.css"}

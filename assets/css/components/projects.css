@@ -1,0 +1,45 @@
+.project-image {
+  height: 25rem;
+  /* padding: 0 0.75rem; */
+  margin: 1.6rem 0;
+  border: 3px solid #0e2431;
+  border-radius: 0.8rem;
+  background-color: #0e2431;
+  overflow-y: auto;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  text-align: left;
+}
+
+.project-title {
+  padding: 4px 8px;
+  /* Para que el elemento no se expanda como consecuencia del display flex */
+  font: bold 1.8rem/30px "Poppins", sans-serif;
+  align-self: flex-start;
+  color: #fff;
+  background-color: #0e2431;
+  box-shadow: -4px 4px 0 #0571f8;
+  text-decoration: none;
+}
+
+.project-description .project-links {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  margin-block-end: 60px;
+}
+
+.project-content {
+  font-size: 1.4rem;
+}
+
+.project-description .project-links a.button {
+  text-align: center;
+  block-size: 50px;
+}
+
+/*# sourceMappingURL=projects.css.map */

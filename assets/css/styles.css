@@ -1,0 +1,276 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #0e2431;
+  background-color: #fff;
+}
+
+img {
+  max-inline-size: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.bd-grid {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 3.2rem;
+  width: calc(100% - 3.2rem);
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+}
+
+.primary-button {
+  padding: 1.2rem 4rem;
+  font-weight: 600;
+  background-color: #0571f8;
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+}
+
+.primary-button:hover {
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+}
+
+.primary-button--hero {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 1.8rem;
+}
+
+.primary-button--position {
+  margin-top: 2.4rem;
+}
+
+.primary-button--flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.wave {
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+}
+
+.header__logo {
+  font-size: 2rem;
+}
+
+.light-font {
+  font-weight: 300;
+}
+
+.primary-color {
+  color: #0571f8;
+}
+
+.primary-color--bold {
+  font-weight: 600;
+}
+
+.header .nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.8rem;
+}
+
+.hero {
+  height: calc(100vh - 4.8rem);
+  row-gap: 1.6rem;
+}
+
+.hero-description {
+  margin-top: 2.4rem;
+  align-self: center;
+}
+
+.hero-description__title {
+  margin-bottom: 1.6rem;
+  font-size: 3rem;
+  letter-spacing: 0.005em;
+}
+
+.hero-description__subtitle {
+  font-size: 1.8rem;
+}
+
+.hero-social {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+}
+
+.hero__img {
+  max-inline-size: 80%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.section {
+  padding-top: 4.8rem;
+  /* padding-bottom: 3.2rem; */
+}
+
+.section-title {
+  position: relative;
+  font-size: 2rem;
+  color: #0571f8;
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 64px;
+  height: 0.288rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 3.2rem;
+  background-color: #0571f8;
+}
+
+.project-image {
+  height: 25rem;
+  /* padding: 0 0.75rem; */
+  margin: 1.6rem 0;
+  border: 3px solid #0e2431;
+  border-radius: 0.8rem;
+  background-color: #0e2431;
+  overflow-y: auto;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  text-align: left;
+}
+
+.project-title {
+  padding: 4px 8px;
+  /* Para que el elemento no se expanda como consecuencia del display flex */
+  font: bold 1.8rem/30px "Poppins", sans-serif;
+  align-self: flex-start;
+  color: #fff;
+  background-color: #0e2431;
+  box-shadow: -4px 4px 0 #0571f8;
+  text-decoration: none;
+}
+
+.project-description .project-links {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  margin-block-end: 60px;
+}
+
+.project-content {
+  font-size: 1.4rem;
+}
+
+.project-description .project-links a.button {
+  text-align: center;
+  block-size: 50px;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem 0 3rem 0;
+  font-weight: 600;
+  font-size: 1.4rem;
+  background-color: #0e2431;
+  color: #fff;
+}
+
+.footer__social {
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.footer__social-icon {
+  margin: 0 2.4rem;
+}
+
+p.footer-description {
+  margin-bottom: 0.25rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

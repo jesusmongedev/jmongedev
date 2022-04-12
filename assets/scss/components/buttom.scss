@@ -1,0 +1,25 @@
+@use '../abstracts/' as *;
+.primary-button {
+  padding: 1.2rem 4rem;
+  font-weight: $text-bold;
+  background-color: $primary-color;
+  border-radius: $bd-radius;
+  font-size: $sm-font;
+}
+.primary-button:hover {
+  box-shadow: $button-shadow;
+}
+.primary-button--hero {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: $md-font;
+}
+.primary-button--position {
+  margin-top: $mb-3;
+}
+.primary-button--flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $mb-1;
+}

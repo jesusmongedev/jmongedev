@@ -1,0 +1,27 @@
+.section {
+  padding-top: 4.8rem;
+  /* padding-bottom: 3.2rem; */
+}
+
+.section-title {
+  position: relative;
+  font-size: 2rem;
+  color: #0571f8;
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 64px;
+  height: 0.288rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 3.2rem;
+  background-color: #0571f8;
+}
+
+/*# sourceMappingURL=reusableSection.css.map */

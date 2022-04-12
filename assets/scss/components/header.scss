@@ -1,0 +1,31 @@
+@use '../abstracts/' as *;
+@use '../components/waveAnimation.scss';
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: $z-fixed;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+}
+.header__logo {
+  font-size: $logo-font;
+}
+.light-font {
+  font-weight: $text-light;
+}
+.primary-color {
+  color: $primary-color;
+}
+.primary-color--bold {
+  font-weight: $text-bold;
+}
+
+.header .nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: $header-height;
+}
