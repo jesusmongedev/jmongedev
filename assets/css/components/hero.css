@@ -68,6 +68,11 @@
   gap: 4em;
 }
 
+.hero-social-icon {
+  color: #0e2431;
+  font-size: 3rem;
+}
+
 .text-primary {
   color: #0571f8;
 }

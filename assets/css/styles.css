@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -50,7 +51,7 @@ li {
   font-weight: 600;
   background-color: #0571f8;
   border-radius: 0.8rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .primary-button:hover {
   box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
@@ -60,16 +61,18 @@ li {
   font-size: 1.8rem;
 }
 .primary-button--flex {
+  padding: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 0.8rem;
+  background-color: #fff;
+  color: #0571f8;
 }
 
 .menu-btn {
   position: relative;
-  cursor: pointer;
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 .menu-btn__icon {
   width: 30px;
@@ -243,6 +246,11 @@ li {
   gap: 4em;
 }
 
+.hero-social-icon {
+  color: #0e2431;
+  font-size: 3rem;
+}
+
 .text-primary {
   color: #0571f8;
 }
@@ -316,30 +324,30 @@ li {
 }
 .project-container .project-card .project-links {
   display: flex;
-  gap: 16px;
-  flex-direction: column;
+  gap: 1.6rem;
+}
+.project-container .project-card .project-links .project-icon {
+  font-size: 3rem;
+  color: #0571f8;
 }
 
 .footer {
   text-align: center;
-  padding: 2rem 0 3rem 0;
   font-weight: 600;
-  font-size: 1.4rem;
+  padding: 2rem 0 3rem 0;
   background-color: #0e2431;
   color: #fff;
 }
-
 .footer__social {
   margin-top: 3.2rem;
   margin-bottom: 3.2rem;
 }
-
 .footer__social-icon {
-  margin: 0 2.4rem;
+  margin: 0 1.6rem;
+  font-size: 3rem;
 }
-
-p.footer-description {
-  margin-bottom: 0.25rem;
+.footer-description {
+  font-size: 1.4rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -19,7 +19,7 @@
     <link
       rel="stylesheet"
       href="assets/css/tablet.css"
-      media="screen and (min-width: 60em)"
+      media="screen and (min-width: 768px)"
     />
     <link
       rel="stylesheet"
@@ -73,7 +73,7 @@
     </header>
     <!-- ===== MAIN NAVIGATOR SECTIONS ===== -->
     <main>
-      <section class="hero bd-grid">
+      <section class="hero bd-grid" id="home">
         <div class="hero-description">
           <h2 class="hero-description__title">
             <span>Hey ! <span class="wave">👋</span></span>
@@ -97,7 +97,7 @@
               rel="noopener nofollow"
               aria-label="Sígueme en linkedin"
             >
-              <i class="bx bxl-linkedin"></i>
+              <i class="bx bxl-linkedin hero-social-icon"></i>
             </a>
           </li>
           <li>
@@ -107,7 +107,7 @@
               rel="noopener nofollow"
               aria-label="Sígueme en twitter"
             >
-              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-twitter hero-social-icon"></i>
             </a>
           </li>
           <li>
@@ -117,7 +117,7 @@
               rel="noopener nofollow"
               aria-label="Sígueme en github"
             >
-              <i class="bx bxl-github"></i>
+              <i class="bx bxl-github hero-social-icon"></i>
             </a>
           </li>
         </ul>
@@ -161,18 +161,18 @@
                 href="https://platzi-avo-app.vercel.app/"
                 class="primary-button primary-button--flex"
               >
-                <span> <i class="bx bx-link"></i> </span>
-                Try it live</a
-              >
+                <i class="bx bx-link-external project-icon"></i>
+                Demo
+              </a>
               <a
                 target="_blank"
                 rel="noopener nofollow"
                 href="https://github.com/jesusmongedev/platzi-avo-app"
                 class="primary-button primary-button--flex"
               >
-                <span> <i class="bx bx-folder"></i> </span>
-                View source</a
-              >
+                <i class="bx bx-folder project-icon"></i>
+                Repository
+              </a>
             </div>
           </figure>
 
@@ -204,18 +204,18 @@
                 href="https://todo-app-motivation-quote.netlify.app/"
                 class="primary-button primary-button--flex"
               >
-                <span> <i class="bx bx-link"></i> </span>
-                Try it live</a
-              >
+                <i class="bx bx-link-external project-icon"></i>
+                Demo
+              </a>
               <a
                 target="_blank"
                 rel="noopener nofollow"
                 href="hhttps://github.com/jesusmongedev/react-101-todo-list-app"
                 class="primary-button primary-button--flex"
               >
-                <span> <i class="bx bx-folder"></i> </span>
-                View source</a
-              >
+                <i class="bx bx-folder project-icon"></i>
+                Repository
+              </a>
             </div>
           </figure>
 
@@ -239,26 +239,26 @@
                 Hotel booking reservation app: Reviews, About, Slider, Rooms,
                 section. Mobile only design.
               </p>
-            </div>
-            <div class="project-links">
-              <a
-                target="_blank"
-                rel="noopener nofollow"
-                href="https://eurobuilding-hotel.vercel.app/  "
-                class="primary-button primary-button--flex"
-              >
-                <span> <i class="bx bx-link"></i> </span>
-                Try it live</a
-              >
-              <a
-                target="_blank"
-                rel="noopener nofollow"
-                href="https://github.com/jesusmongedev/eurobuilding-hotel"
-                class="primary-button primary-button--flex"
-              >
-                <span> <i class="bx bx-folder"></i> </span>
-                View source</a
-              >
+              <div class="project-links">
+                <a
+                  target="_blank"
+                  rel="noopener nofollow"
+                  href="https://eurobuilding-hotel.vercel.app/  "
+                  class="primary-button primary-button--flex"
+                >
+                  <i class="bx bx-link-external project-icon"></i>
+                  Demo
+                </a>
+                <a
+                  target="_blank"
+                  rel="noopener nofollow"
+                  href="https://github.com/jesusmongedev/eurobuilding-hotel"
+                  class="primary-button primary-button--flex"
+                >
+                  <i class="bx bx-folder project-icon"></i>
+                  Repository
+                </a>
+              </div>
             </div>
           </figure>
         </div>
@@ -266,23 +266,21 @@
     </main>
     <footer class="footer" id="footer">
       <div class="footer-content">
-        <p class="header__logo">Jmonge<span class="light-font">Dev</span></p>
+        <p class="header__logo">
+          Jmonge<span class="header__logo--light">Dev</span>
+        </p>
 
         <div class="footer__social">
           <a
             href="https://www.linkedin.com/in/jesus-monge-loor/?locale=en_US"
-            class="footer__social-icon"
             target="_blank"
-            ><i class="bx bxl-linkedin"></i
+            ><i class="bx bxl-linkedin footer__social-icon"></i
           ></a>
           <a href="https://twitter.com/jmongedev" target="_blank"
-            ><i class="bx bxl-twitter"></i
+            ><i class="bx bxl-twitter footer__social-icon"></i
           ></a>
-          <a
-            href="https://github.com/jesusmongedev"
-            target="_blank"
-            class="footer__social-icon"
-            ><i class="bx bxl-github"></i
+          <a href="https://github.com/jesusmongedev" target="_blank"
+            ><i class="bx bxl-github footer__social-icon"></i
           ></a>
         </div>
         <p class="footer-description">Made with 🧡 by Jesús 🇪🇨.</p>

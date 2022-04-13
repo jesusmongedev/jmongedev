@@ -41,8 +41,11 @@
 }
 .project-container .project-card .project-links {
   display: flex;
-  gap: 16px;
-  flex-direction: column;
+  gap: 1.6rem;
+}
+.project-container .project-card .project-links .project-icon {
+  font-size: 3rem;
+  color: #0571f8;
 }
 
 /*# sourceMappingURL=projects.css.map */

@@ -2,22 +2,19 @@
 
 .footer {
   text-align: center;
-  padding: 2rem 0 3rem 0;
   font-weight: $text-bold;
-  font-size: $text-sm;
+  padding: 2rem 0 3rem 0;
   background-color: $secondary-color;
   color: #fff;
-}
-
-.footer__social {
-  margin-top: $mb-4;
-  margin-bottom: $mb-4;
-}
-
-.footer__social-icon {
-  margin: 0 $mb-3;
-}
-
-p.footer-description {
-  margin-bottom: 0.25rem;
+  &__social {
+    margin-top: $mb-4;
+    margin-bottom: $mb-4;
+    &-icon {
+      margin: 0 $mb-2;
+      font-size: $text-xl;
+    }
+  }
+  &-description {
+    font-size: $text-sm;
+  }
 }

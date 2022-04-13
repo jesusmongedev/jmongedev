@@ -1,27 +1,28 @@
 @use './abstracts/index' as *;
 
+.header {
+  height: $text-2xl;
+  &__logo {
+    font-size: $text-xl;
+  }
+}
+
 .hero {
   height: 100vh;
   &-description {
-    align-self: flex-end;
     margin-top: $mb-4;
     &__subtitle {
       margin-bottom: $mb-4;
-      max-width: 51%;
     }
   }
-}
-.bd-grid {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .hero__img {
   max-inline-size: 460px;
-  bottom: 15%;
 }
-.hero-social {
-  flex-direction: row;
+
+.hero-social-icon {
+  font-size: $header-height;
 }
 
 .project-container {
@@ -29,5 +30,5 @@
 }
 
 .primary-button--hero {
-  font-size: $logo-font;
+  font-size: $text-xl;
 }
