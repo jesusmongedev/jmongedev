@@ -4,13 +4,13 @@
   font-weight: $text-bold;
   background-color: $primary-color;
   border-radius: $bd-radius;
-  font-size: $sm-font;
+  font-size: $text-sm;
   &:hover {
     box-shadow: $button-shadow;
   }
   &--hero {
     display: inline-block;
-    font-size: $md-font;
+    font-size: $text-lg;
   }
   &--flex {
     display: flex;

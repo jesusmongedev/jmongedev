@@ -66,6 +66,69 @@ li {
   gap: 0.8rem;
 }
 
+.menu-btn {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__icon {
+  width: 30px;
+  height: 2px;
+  background-color: #121212;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__icon::before, .menu-btn__icon::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #121212;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__icon::before {
+  transform: translateY(-8px);
+}
+.menu-btn__icon::after {
+  transform: translateY(8px);
+}
+
+.menu-btn.open .menu-btn__icon {
+  transform: translateX(-50px);
+  background: transparent;
+}
+
+.menu-btn.open .menu-btn__icon::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn__icon::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+}
+.header__logo {
+  font-size: 2rem;
+}
+.header__logo--light {
+  font-weight: 300;
+}
+.header .nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.8rem;
+}
+
 .wave {
   animation-name: wave-animation;
   /* Refers to the name of your @keyframes element below */
@@ -106,28 +169,6 @@ li {
     transform: rotate(0deg);
   }
 }
-.header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 100;
-  background-color: #fff;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
-}
-.header__logo {
-  font-size: 2rem;
-}
-.header__logo--light {
-  font-weight: 300;
-}
-.header .nav {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 4.8rem;
-}
-
 .hero {
   height: calc(100vh - 4.8rem);
   row-gap: 1.6rem;
@@ -146,7 +187,7 @@ li {
   margin-bottom: 1.6rem;
 }
 .hero__img {
-  max-inline-size: 80%;
+  max-inline-size: 260px;
   position: absolute;
   right: 0;
   bottom: 0;

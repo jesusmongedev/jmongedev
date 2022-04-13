@@ -1,3 +1,12 @@
+@use './abstracts/index' as *;
+
+.hero-description__title {
+  font-size: $text-2xl;
+}
+.hero-description__subtitle {
+  font-size: $text-xl;
+}
+
 .hero__img {
-  max-inline-size: 380px;
+  max-inline-size: 295px;
 }

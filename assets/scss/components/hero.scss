@@ -1,4 +1,5 @@
 @use '../abstracts/' as *;
+@use '../components/waveAnimation.scss';
 
 .hero {
   height: calc(100vh - $header-height);
@@ -8,16 +9,16 @@
     align-self: center;
     &__title {
       margin-bottom: $mb-2;
-      font-size: $xl-font;
+      font-size: $text-xl;
       letter-spacing: $hero-space;
     }
     &__subtitle {
-      font-size: $md-font;
+      font-size: $text-lg;
       margin-bottom: $mb-2;
     }
   }
   &__img {
-    max-inline-size: 80%;
+    max-inline-size: 260px;
     position: absolute;
     right: 0;
     bottom: 0;

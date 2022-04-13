@@ -1,5 +1,13 @@
+.hero-description__title {
+  font-size: 5.6rem;
+}
+
+.hero-description__subtitle {
+  font-size: 3rem;
+}
+
 .hero__img {
-  max-inline-size: 380px;
+  max-inline-size: 295px;
 }
 
 /*# sourceMappingURL=largeMobiles.css.map */

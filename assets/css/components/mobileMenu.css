@@ -39,26 +39,4 @@
   transform: rotate(-45deg) translate(35px, 35px);
 }
 
-.header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 100;
-  background-color: #fff;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
-}
-.header__logo {
-  font-size: 2rem;
-}
-.header__logo--light {
-  font-weight: 300;
-}
-.header .nav {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 4.8rem;
-}
-
-/*# sourceMappingURL=header.css.map */
+/*# sourceMappingURL=mobileMenu.css.map */
