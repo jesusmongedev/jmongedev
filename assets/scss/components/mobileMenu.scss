@@ -1,3 +1,5 @@
+@use '../abstracts/index' as *;
+
 .menu-btn {
   position: relative;
   cursor: pointer;
@@ -5,7 +7,7 @@
   &__icon {
     width: 30px;
     height: 2px;
-    background-color: #121212;
+    background-color: $secondary-color;
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
     &::before,
@@ -14,7 +16,7 @@
       position: absolute;
       width: 30px;
       height: 2px;
-      background-color: #121212;
+      background-color: $secondary-color;
       border-radius: 5px;
       transition: all 0.5s ease-in-out;
     }
