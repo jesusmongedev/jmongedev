@@ -11,10 +11,11 @@
 }
 .footer__social-icon {
   margin: 0 1.6rem;
-  font-size: 3rem;
+  font-size: 2.8rem;
+  color: white;
 }
 .footer-description {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 /*# sourceMappingURL=footer.css.map */

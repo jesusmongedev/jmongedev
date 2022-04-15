@@ -1,17 +1,49 @@
 @use './abstracts/index' as *;
 
-.header {
-  height: $text-2xl;
-  &__logo {
-    font-size: $text-xl;
+body {
+  margin: 0;
+}
+
+.section {
+  padding: 4rem 0 3rem;
+  &-title {
+    margin-bottom: var(--mb-6);
+    &::after {
+      width: 80px;
+      top: 3rem;
+    }
   }
 }
 
+.menu-btn {
+  display: none;
+}
+
+.nav__list {
+  display: flex;
+  gap: $mb-6;
+  .nav__item {
+    margin: 0;
+  }
+  .nav__link {
+    color: $secondary-color;
+  }
+}
+
+.header {
+  height: calc($header-height + 1rem);
+}
+
 .hero {
-  height: 100vh;
+  padding: 8rem 0 2rem;
   &-description {
     margin-top: $mb-4;
+    &__title {
+      font-size: $text-2xl;
+    }
     &__subtitle {
+      font-size: $text-xl;
+
       margin-bottom: $mb-4;
     }
   }

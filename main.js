@@ -7,8 +7,10 @@ const $navLink = document.querySelectorAll('.nav__link')
 const toggleMenuBtn = () => {
   $menuBtn.classList.toggle('open')
   $menuBtn.classList.contains('open')
-    ? $navigator.classList.add('show')
-    : $navigator.classList.remove('show')
+    ? $navigator.classList.add('show') &
+      $menuBtn.setAttribute('aria-expanded', true)
+    : $navigator.classList.remove('show') &
+      $menuBtn.setAttribute('aria-expanded', false)
 }
 
 // addEventListener to listen $menuBtn click and run the function toggleMenuBtn
@@ -22,6 +24,7 @@ function linkAction() {
   // close menu mobile when clicked item
   $navigator.classList.remove('show')
   $menuBtn.classList.toggle('open')
+  $menuBtn.setAttribute('aria-expanded', false)
 }
 
 $navLink.forEach((n) => n.addEventListener('click', linkAction))

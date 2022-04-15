@@ -43,10 +43,16 @@
     }
     .project-links {
       display: flex;
-      gap: $mb-2;
+      gap: $mb-3;
+      &__anchor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $primary-color;
+        font-size: $text-sm;
+      }
       .project-icon {
         font-size: $text-xl;
-        color: $primary-color;
       }
     }
   }

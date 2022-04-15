@@ -2,8 +2,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 html {
@@ -12,28 +10,32 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 4.8rem 0 0 0;
   font-family: "Poppins", sans-serif;
   color: #0e2431;
   background-color: #fff;
 }
 
-img {
-  max-inline-size: 100%;
-  height: auto;
+h1,
+h2,
+p,
+figure {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 a {
   text-decoration: none;
-  color: #fff;
 }
 
-ul {
-  padding: 0;
-}
-
-li {
-  list-style-type: none;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .bd-grid {
@@ -51,41 +53,43 @@ li {
   font-weight: 600;
   background-color: #0571f8;
   border-radius: 0.8rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  color: #fff;
 }
 .primary-button:hover {
   box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
 }
 .primary-button--hero {
   display: inline-block;
-  font-size: 1.8rem;
-}
-.primary-button--flex {
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #fff;
-  color: #0571f8;
+  font-size: 2rem;
 }
 
 .menu-btn {
   position: relative;
+  width: 35px;
+  height: 30px;
   transition: all 0.5s ease-in-out;
+  background: none;
+  border: none;
+  outline: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 .menu-btn__icon {
+  position: absolute;
+  left: 0;
   width: 30px;
-  height: 2px;
+  height: 3px;
   background-color: #0e2431;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
 }
 .menu-btn__icon::before, .menu-btn__icon::after {
-  content: "";
   position: absolute;
+  left: 0;
+  content: "";
   width: 30px;
-  height: 2px;
+  height: 3px;
   background-color: #0e2431;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
@@ -119,7 +123,7 @@ li {
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 .header__logo {
-  font-size: 2rem;
+  font-size: 2.8rem;
 }
 .header__logo--light {
   font-weight: 300;
@@ -130,29 +134,33 @@ li {
   align-items: center;
   justify-content: space-between;
   height: 4.8rem;
-  font-size: 2rem;
+  font-size: 2.8rem;
 }
 
-.nav__menu {
-  position: fixed;
-  top: 4.8rem;
-  width: 80%;
-  height: 100%;
-  padding: 4rem;
-  background-color: #0e2431;
-  transform: translateX(100vw);
-  transition: transform 0.3s;
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    top: 4.8rem;
+    width: 80%;
+    height: 100%;
+    padding: 4rem;
+    background-color: #0e2431;
+    transform: translateX(100vw);
+    transition: transform 0.3s;
+  }
 }
-.nav__menu .nav__item {
+.nav__item {
+  font-size: 2rem;
   margin-bottom: 3.2rem;
 }
-.nav__menu .nav__item .nav__link {
+.nav__item .nav__link {
+  color: white;
   position: relative;
 }
-.nav__menu .nav__item .nav__link:hover {
+.nav__item .nav__link:hover {
   position: relative;
 }
-.nav__menu .nav__item .nav__link:hover::after {
+.nav__item .nav__link:hover::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -226,11 +234,11 @@ li {
 }
 .hero-description__title {
   margin-bottom: 1.6rem;
-  font-size: 3rem;
+  font-size: 2.8rem;
   letter-spacing: 0.005em;
 }
 .hero-description__subtitle {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 1.6rem;
 }
 .hero__img {
@@ -248,7 +256,7 @@ li {
 
 .hero-social-icon {
   color: #0e2431;
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 
 .text-primary {
@@ -263,7 +271,7 @@ li {
 }
 .section-title {
   position: relative;
-  font-size: 2rem;
+  font-size: 2.8rem;
   color: #0571f8;
   margin-top: 3.2rem;
   margin-bottom: 3.2rem;
@@ -272,12 +280,12 @@ li {
 .section-title::after {
   position: absolute;
   content: "";
-  width: 64px;
-  height: 0.288rem;
+  width: 100px;
+  height: 0.35rem;
   left: 0;
   right: 0;
   margin: auto;
-  top: 3.2rem;
+  top: 4.25rem;
   background-color: #0571f8;
 }
 
@@ -320,15 +328,21 @@ li {
   text-align: left;
 }
 .project-container .project-card .project-description__text {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .project-container .project-card .project-links {
   display: flex;
-  gap: 1.6rem;
+  gap: 2.4rem;
+}
+.project-container .project-card .project-links__anchor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #0571f8;
+  font-size: 1.6rem;
 }
 .project-container .project-card .project-links .project-icon {
-  font-size: 3rem;
-  color: #0571f8;
+  font-size: 2.8rem;
 }
 
 .footer {
@@ -344,10 +358,11 @@ li {
 }
 .footer__social-icon {
   margin: 0 1.6rem;
-  font-size: 3rem;
+  font-size: 2.8rem;
+  color: white;
 }
 .footer-description {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

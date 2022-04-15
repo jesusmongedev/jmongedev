@@ -3,7 +3,7 @@
 }
 .section-title {
   position: relative;
-  font-size: 2rem;
+  font-size: 2.8rem;
   color: #0571f8;
   margin-top: 3.2rem;
   margin-bottom: 3.2rem;
@@ -12,12 +12,12 @@
 .section-title::after {
   position: absolute;
   content: "";
-  width: 64px;
-  height: 0.288rem;
+  width: 100px;
+  height: 0.35rem;
   left: 0;
   right: 0;
   margin: auto;
-  top: 3.2rem;
+  top: 4.25rem;
   background-color: #0571f8;
 }
 

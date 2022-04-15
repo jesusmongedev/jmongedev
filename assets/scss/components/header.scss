@@ -9,7 +9,7 @@
   background-color: #fff;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
   &__logo {
-    font-size: $logo-font;
+    font-size: $text-xl;
     &--light {
       font-weight: $text-light;
     }
@@ -20,35 +20,40 @@
     align-items: center;
     justify-content: space-between;
     height: $header-height;
-    font-size: $logo-font;
+    font-size: $text-xl;
   }
 }
 
-.nav__menu {
-  position: fixed;
-  top: $header-height;
-  width: 80%;
-  height: 100%;
-  padding: 4rem;
-  background-color: $secondary-color;
-  transform: translateX(100vw);
-  transition: transform 0.3s;
-  .nav__item {
-    margin-bottom: $mb-4;
-    .nav__link {
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    top: $header-height;
+    width: 80%;
+    height: 100%;
+    padding: 4rem;
+    background-color: $secondary-color;
+    transform: translateX(100vw);
+    transition: transform 0.3s;
+  }
+}
+
+.nav__item {
+  font-size: $text-lg;
+  margin-bottom: $mb-4;
+  .nav__link {
+    color: #ffff;
+    position: relative;
+    &:hover {
       position: relative;
-      &:hover {
-        position: relative;
-      }
-      &:hover::after {
-        position: absolute;
-        content: '';
-        width: 100%;
-        height: 0.4rem;
-        left: 0;
-        top: 3rem;
-        background-color: $primary-color;
-      }
+    }
+    &:hover::after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 0.4rem;
+      left: 0;
+      top: 3rem;
+      background-color: $primary-color;
     }
   }
 }

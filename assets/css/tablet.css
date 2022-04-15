@@ -1,17 +1,48 @@
-.header {
-  height: 5.6rem;
+body {
+  margin: 0;
 }
-.header__logo {
-  font-size: 3rem;
+
+.section {
+  padding: 4rem 0 3rem;
+}
+.section-title {
+  margin-bottom: var(--mb-6);
+}
+.section-title::after {
+  width: 80px;
+  top: 3rem;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.nav__list {
+  display: flex;
+  gap: 4.8rem;
+}
+.nav__list .nav__item {
+  margin: 0;
+}
+.nav__list .nav__link {
+  color: #0e2431;
+}
+
+.header {
+  height: 5.8rem;
 }
 
 .hero {
-  height: 100vh;
+  padding: 8rem 0 2rem;
 }
 .hero-description {
   margin-top: 3.2rem;
 }
+.hero-description__title {
+  font-size: 5rem;
+}
 .hero-description__subtitle {
+  font-size: 2.8rem;
   margin-bottom: 3.2rem;
 }
 
@@ -28,7 +59,7 @@
 }
 
 .primary-button--hero {
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 
 /*# sourceMappingURL=tablet.css.map */

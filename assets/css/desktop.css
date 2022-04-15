@@ -7,7 +7,7 @@
   align-self: flex-end;
 }
 .hero-description .hero-description__subtitle {
-  max-width: 51%;
+  max-width: 60%;
 }
 
 .hero-social {
@@ -16,7 +16,7 @@
 
 .hero__img {
   right: 10%;
-  bottom: 15%;
+  bottom: 20%;
 }
 
 /*# sourceMappingURL=desktop.css.map */

@@ -5,19 +5,12 @@
   background-color: $primary-color;
   border-radius: $bd-radius;
   font-size: $text-md;
+  color: #fff;
   &:hover {
     box-shadow: $button-shadow;
   }
   &--hero {
     display: inline-block;
     font-size: $text-lg;
-  }
-  &--flex {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    color: $primary-color;
   }
 }
