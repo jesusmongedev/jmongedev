@@ -30,7 +30,7 @@ body {
   }
 }
 
-.header {
+.nav {
   height: calc($header-height + 1rem);
 }
 
@@ -39,10 +39,10 @@ body {
   &-description {
     margin-top: $mb-4;
     &__title {
-      font-size: $text-2xl;
+      font-size: $text-big;
     }
     &__subtitle {
-      font-size: $text-xl;
+      font-size: $text-2xl;
 
       margin-bottom: $mb-4;
     }
@@ -62,5 +62,5 @@ body {
 }
 
 .primary-button--hero {
-  font-size: $text-xl;
+  font-size: $text-2xl;
 }

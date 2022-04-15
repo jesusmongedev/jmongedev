@@ -3,7 +3,7 @@
   font-weight: 600;
   background-color: #0571f8;
   border-radius: 0.8rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #fff;
 }
 .primary-button:hover {
@@ -11,7 +11,6 @@
 }
 .primary-button--hero {
   display: inline-block;
-  font-size: 2rem;
 }
 
 /*# sourceMappingURL=buttom.css.map */

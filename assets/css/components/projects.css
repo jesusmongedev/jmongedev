@@ -37,18 +37,23 @@
   text-align: left;
 }
 .project-container .project-card .project-description__text {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+}
+.project-container .project-card .project-description__text::first-line {
+  font-weight: 600;
+  color: #0571f8;
 }
 .project-container .project-card .project-links {
   display: flex;
-  gap: 2.4rem;
+  gap: 1.6rem;
 }
 .project-container .project-card .project-links__anchor {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #0571f8;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 .project-container .project-card .project-links .project-icon {
   font-size: 2.8rem;

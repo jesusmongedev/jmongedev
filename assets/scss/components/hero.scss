@@ -5,29 +5,38 @@
   height: calc(100vh - $header-height);
   row-gap: 1.6rem;
   &-description {
-    margin-top: $mb-3;
     align-self: center;
     &__title {
       margin-bottom: $mb-2;
-      font-size: $text-xl;
+      font-size: $text-2xl;
       letter-spacing: $hero-space;
     }
     &__subtitle {
-      font-size: $text-lg;
+      font-size: $text-md;
       margin-bottom: $mb-2;
     }
   }
   &__img {
-    max-inline-size: 260px;
+    max-inline-size: 230px;
     position: absolute;
     right: 0;
     bottom: 0;
   }
+
+  @media (orientation: landscape) {
+    .hero-description__subtitle {
+      max-width: 50%;
+    }
+    .hero-social {
+      flex-direction: row;
+    }
+  }
+
   &-social {
     align-self: center;
     display: flex;
     flex-direction: column;
-    gap: 4em;
+    gap: $mb-3;
   }
 }
 .hero-social-icon {

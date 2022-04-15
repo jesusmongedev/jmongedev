@@ -1,13 +1,12 @@
 @use '../abstracts/index' as *;
 
 .section {
-  padding-top: 4.8rem;
+  padding-top: $header-height;
   &-title {
     position: relative;
     font-size: $text-xl;
     color: $primary-color;
-    margin-top: $mb-4;
-    margin-bottom: $mb-4;
+    margin: $mb-4 0;
     text-align: center;
     &::after {
       position: absolute;

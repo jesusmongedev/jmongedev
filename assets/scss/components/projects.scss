@@ -39,20 +39,25 @@
       text-align: left;
       &__text {
         font-size: $text-sm;
+        &::first-line {
+          font-weight: $text-bold;
+          color: $primary-color;
+        }
       }
     }
     .project-links {
       display: flex;
-      gap: $mb-3;
+      gap: $mb-2;
       &__anchor {
         display: flex;
         flex-direction: column;
         align-items: center;
         color: $primary-color;
         font-size: $text-sm;
+        font-weight: $text-bold;
       }
       .project-icon {
-        font-size: $text-xl;
+        font-size: $text-2xl;
       }
     }
   }
