@@ -7,12 +7,17 @@ body {
 .section {
   padding: 4rem 0 3rem;
   &-title {
+    font-size: $text-xl;
     margin-bottom: var(--mb-6);
     &::after {
       width: 80px;
-      top: 3rem;
+      top: $header-height;
     }
   }
+}
+
+.header__logo {
+  font-size: $text-xl;
 }
 
 .menu-btn {
@@ -26,6 +31,7 @@ body {
     margin: 0;
   }
   .nav__link {
+    font-size: $text-md;
     color: $secondary-color;
   }
 }
@@ -35,26 +41,25 @@ body {
 }
 
 .hero {
-  padding: 8rem 0 2rem;
+  padding-top: $header-height;
   &-description {
     margin-top: $mb-4;
     &__title {
       font-size: $text-big;
     }
     &__subtitle {
-      font-size: $text-2xl;
+      font-size: $text-xl;
 
       margin-bottom: $mb-4;
     }
   }
-}
-
-.hero__img {
-  max-inline-size: 460px;
+  &-social {
+    gap: $mb-6;
+  }
 }
 
 .hero-social-icon {
-  font-size: $header-height;
+  font-size: $text-big;
 }
 
 .project-container {
@@ -62,5 +67,18 @@ body {
 }
 
 .primary-button--hero {
-  font-size: $text-2xl;
+  font-size: $text-xl;
+}
+
+.footer {
+  padding: $mb-6 0;
+  &__social {
+    margin: $mb-4;
+    &-icon {
+      margin: 0 $mb-3;
+    }
+  }
+  &-description {
+    font-size: $text-md;
+  }
 }

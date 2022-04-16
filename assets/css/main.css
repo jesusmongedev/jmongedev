@@ -39,4 +39,12 @@ img {
   height: auto;
 }
 
+.bx {
+  transition: color 0.3s;
+}
+
+.bx:hover {
+  color: #0571f8;
+}
+
 /*# sourceMappingURL=main.css.map */

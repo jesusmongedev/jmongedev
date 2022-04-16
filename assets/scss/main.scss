@@ -40,3 +40,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.bx {
+  transition: color 0.3s;
+}
+.bx:hover {
+  color: $primary-color;
+}

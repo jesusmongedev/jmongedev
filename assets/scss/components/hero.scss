@@ -8,7 +8,7 @@
     align-self: center;
     &__title {
       margin-bottom: $mb-2;
-      font-size: $text-2xl;
+      font-size: $text-xl;
       letter-spacing: $hero-space;
     }
     &__subtitle {
@@ -17,7 +17,7 @@
     }
   }
   &__img {
-    max-inline-size: 230px;
+    max-inline-size: 60%;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -29,6 +29,10 @@
     }
     .hero-social {
       flex-direction: row;
+      gap: $mb-6;
+    }
+    .hero__img {
+      max-inline-size: 30%;
     }
   }
 

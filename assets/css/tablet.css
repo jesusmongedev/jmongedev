@@ -6,11 +6,16 @@ body {
   padding: 4rem 0 3rem;
 }
 .section-title {
+  font-size: 2.6rem;
   margin-bottom: var(--mb-6);
 }
 .section-title::after {
   width: 80px;
-  top: 3rem;
+  top: 4.8rem;
+}
+
+.header__logo {
+  font-size: 2.6rem;
 }
 
 .menu-btn {
@@ -25,6 +30,7 @@ body {
   margin: 0;
 }
 .nav__list .nav__link {
+  font-size: 1.8rem;
   color: #0e2431;
 }
 
@@ -33,25 +39,24 @@ body {
 }
 
 .hero {
-  padding: 8rem 0 2rem;
+  padding-top: 4.8rem;
 }
 .hero-description {
   margin-top: 3.2rem;
 }
 .hero-description__title {
-  font-size: 5rem;
+  font-size: 4.4rem;
 }
 .hero-description__subtitle {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   margin-bottom: 3.2rem;
 }
-
-.hero__img {
-  max-inline-size: 460px;
+.hero-social {
+  gap: 4.8rem;
 }
 
 .hero-social-icon {
-  font-size: 4.8rem;
+  font-size: 4.4rem;
 }
 
 .project-container {
@@ -59,7 +64,20 @@ body {
 }
 
 .primary-button--hero {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
+}
+
+.footer {
+  padding: 4.8rem 0;
+}
+.footer__social {
+  margin: 3.2rem;
+}
+.footer__social-icon {
+  margin: 0 2.4rem;
+}
+.footer-description {
+  font-size: 1.8rem;
 }
 
 /*# sourceMappingURL=tablet.css.map */

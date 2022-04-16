@@ -6,13 +6,6 @@
 .hero-description {
   align-self: flex-end;
 }
-.hero-description .hero-description__subtitle {
-  max-width: 60%;
-}
-
-.hero-social {
-  flex-direction: row;
-}
 
 .hero__img {
   right: 10%;
