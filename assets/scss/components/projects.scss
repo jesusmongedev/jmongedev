@@ -3,7 +3,6 @@
 .project-container {
   justify-content: center;
   grid-template-columns: repeat(auto-fill, minmax(280px, 310px));
-  margin-bottom: $mb-6;
   gap: $mb-5;
   .project-card {
     display: flex;

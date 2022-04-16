@@ -7,16 +7,16 @@
 
 .hero-description {
   align-self: flex-end;
-  // &__subtitle {
-  //   max-width: 50%;
-  // }
+  &__subtitle {
+    max-width: 50%;
+  }
 }
-// .hero-social {
-//   flex-direction: row;
-//   gap: $mb-6;
-// }
+.hero-social {
+  flex-direction: row;
+  gap: $mb-6;
+}
 
 .hero__img {
   right: 10%;
-  bottom: 20%;
+  bottom: 15%;
 }

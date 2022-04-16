@@ -28,3 +28,28 @@ function linkAction() {
 }
 
 $navLink.forEach((n) => n.addEventListener('click', linkAction))
+
+const $form = document.querySelector('#form')
+const $buttonMailTo = document.querySelector('#JesusMail')
+
+$form.addEventListener('submit', handleSubmit)
+
+// Functional Contact Form
+function handleSubmit(event) {
+  // Prevenir el evento que ocurre por defecto al dar click en enviar 'Submit
+  event.preventDefault()
+
+  // The FormData() constructor creates a new FormData object.
+  const form = new FormData(this)
+  // console.log(form.get('name'));
+
+  // Editar el atributo href con los datos requeridos usamos `` → Template para poder usar valores dinamicos
+  $buttonMailTo.setAttribute(
+    'href',
+    `mailto:jesus_jaml@outlook.com?subject= Nombre: ${form.get(
+      'name'
+    )} Correo: ${form.get('mail')} &body=${form.get('message')}`
+  )
+  // Dar click automaticamente al enlace <a> oculto
+  $buttonMailTo.click()
+}

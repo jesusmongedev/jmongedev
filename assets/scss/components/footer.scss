@@ -1,9 +1,10 @@
 @use '../abstracts/index' as *;
 
 .footer {
+  margin-top: $mb-6;
+  padding: 2rem 0 3rem 0;
   text-align: center;
   font-weight: $text-bold;
-  padding: 2rem 0 3rem 0;
   background-color: $secondary-color;
   color: #fff;
   &__social {
