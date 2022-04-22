@@ -8,9 +8,11 @@ const toggleMenuBtn = () => {
   $menuBtn.classList.toggle('open')
   $menuBtn.classList.contains('open')
     ? $navigator.classList.add('show') &
-      $menuBtn.setAttribute('aria-expanded', true)
+      $menuBtn.setAttribute('aria-expanded', true) &
+      document.body.classList.add('no-scroll')
     : $navigator.classList.remove('show') &
-      $menuBtn.setAttribute('aria-expanded', false)
+      $menuBtn.setAttribute('aria-expanded', false) &
+      document.body.classList.remove('no-scroll')
 }
 
 // addEventListener to listen $menuBtn click and run the function toggleMenuBtn
@@ -24,6 +26,7 @@ function linkAction() {
   // close menu mobile when clicked item
   $navigator.classList.remove('show')
   $menuBtn.classList.toggle('open')
+  document.body.classList.remove('no-scroll')
   $menuBtn.setAttribute('aria-expanded', false)
 }
 
