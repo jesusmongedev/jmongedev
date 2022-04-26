@@ -4,6 +4,7 @@ const $navigator = document.getElementById('nav-menu')
 const $navLink = document.querySelectorAll('.nav__link')
 
 // toggle open class and show menu when clicked $menuBtn button
+//TODO refactor: Avoid repetting functions
 const toggleMenuBtn = () => {
   $menuBtn.classList.toggle('open')
   $menuBtn.classList.contains('open')
